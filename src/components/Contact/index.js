@@ -9,7 +9,6 @@ function ContactForm() {
   function handleChange(e) {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage('Your email is invalid.');
@@ -30,34 +29,39 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
-
+    window.open('mailto:jesse@email.com?subject=' + formState.name + '&body=' + formState.message);
   }
 
   // JSX
   return (
-    <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+    <section className="content">
+      <article id="about-me">
+        <div className="content-title">
+          <h2>Contact</h2>
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <div className="content-body">
+          <form id="contact-form" onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+            </div>
+            <div>
+              <label htmlFor="email">Email address:</label>
+              <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+            </div>
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
+      </article>
     </section>
   )
 }

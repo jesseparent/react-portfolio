@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import bgWork1 from '../../assets/images/work-git-ticket.jpg';
 import bgWork2 from '../../assets/images/work-avengers.jpg';
@@ -34,73 +34,75 @@ const bgWork6Style = {
 function Portfolio() {
 
   return (
-    <article id="work">
-      <div className="content-title">
-        <h2>Portfolio</h2>
-      </div>
-      <div className="content-body work">
-        <a href="https://git-ticketing-system.herokuapp.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work1" style={bgWork1Style}>
-          <div className="work-label">
-            <h3>
-              Git Ticketing System
+    <section className="content">
+      <article id="work">
+        <div className="content-title">
+          <h2>Portfolio</h2>
+        </div>
+        <div className="content-body work">
+          <a href="https://git-ticketing-system.herokuapp.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work1" style={bgWork1Style}>
+            <div className="work-label">
+              <h3>
+                Git Ticketing System
             </h3>
-            <h4>
-              NodeJS/mySQL/JavaScript
+              <h4>
+                NodeJS/mySQL/JavaScript
             </h4>
-          </div>
-        </div></a>
-        <a href="https://jesseparent.github.io/avengersassembled/" target="_blank" rel="noopener noreferrer"><div className="work-item work2" style={bgWork2Style}>
-          <div className="work-label">
-            <h3>
-              Avengers Assembled
+            </div>
+          </div></a>
+          <a href="https://jesseparent.github.io/avengersassembled/" target="_blank" rel="noopener noreferrer"><div className="work-item work2" style={bgWork2Style}>
+            <div className="work-label">
+              <h3>
+                Avengers Assembled
             </h3>
-            <h4>
-              JavaScript/APIs/CSS
+              <h4>
+                JavaScript/APIs/CSS
             </h4>
-          </div>
-        </div></a>
-        <a href="https://jesseparent.github.io/run-buddy/" target="_blank" rel="noopener noreferrer"><div className="work-item work3" style={bgWork3Style}>
-          <div className="work-label">
-            <h3>
-              Run Buddy
+            </div>
+          </div></a>
+          <a href="https://jesseparent.github.io/run-buddy/" target="_blank" rel="noopener noreferrer"><div className="work-item work3" style={bgWork3Style}>
+            <div className="work-label">
+              <h3>
+                Run Buddy
             </h3>
-            <h4>
-              HTML/CSS
+              <h4>
+                HTML/CSS
             </h4>
-          </div>
-        </div></a>
-        <a href="http://www.jesseparent.com" target="_blank" rel="noopener noreferrer"><div className="work-item work4" style={bgWork4Style}>
-          <div className="work-label">
-            <h3>
-              JesseParent.com
+            </div>
+          </div></a>
+          <a href="http://www.jesseparent.com" target="_blank" rel="noopener noreferrer"><div className="work-item work4" style={bgWork4Style}>
+            <div className="work-label">
+              <h3>
+                JesseParent.com
             </h3>
-            <h4>
-              HTML/CSS/JavaScript
+              <h4>
+                HTML/CSS/JavaScript
             </h4>
-          </div>
-        </div></a>
-        <a href="http://www.jokyrandjesster.com" target="_blank" rel="noopener noreferrer"><div className="work-item work5" style={bgWork5Style}>
-          <div className="work-label">
-            <h3>
-              JoKyR and Jesster
+            </div>
+          </div></a>
+          <a href="http://www.jokyrandjesster.com" target="_blank" rel="noopener noreferrer"><div className="work-item work5" style={bgWork5Style}>
+            <div className="work-label">
+              <h3>
+                JoKyR and Jesster
             </h3>
-            <h4>
-              HTML/CSS/JavaScript
+              <h4>
+                HTML/CSS/JavaScript
             </h4>
-          </div>
-        </div></a>
-        <a href="https://web.archive.org/web/20060103065142/http://www.utahimprov.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work6" style={bgWork6Style}>
-          <div className="work-label">
-            <h3>
-              Utah Improv
+            </div>
+          </div></a>
+          <a href="https://web.archive.org/web/20060103065142/http://www.utahimprov.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work6" style={bgWork6Style}>
+            <div className="work-label">
+              <h3>
+                Utah Improv
             </h3>
-            <h4>
-              SSI/JavaScript/CGI
+              <h4>
+                SSI/JavaScript/CGI
             </h4>
-          </div>
-        </div></a>
-      </div>
-    </article>
+            </div>
+          </div></a>
+        </div>
+      </article>
+    </section>
   )
 }
 

@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.d6042e45.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.e9d624f6.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.e9d624f6.chunk.js.map",
-    "runtime-main.js": "/react-portfolio/static/js/runtime-main.af20d7ad.js",
-    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.af20d7ad.js.map",
+    "main.css": "/react-portfolio/static/css/main.a3b8ea77.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.c3238acf.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.c3238acf.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.ae413aa4.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.ae413aa4.js.map",
     "static/js/2.67583f55.chunk.js": "/react-portfolio/static/js/2.67583f55.chunk.js",
     "static/js/2.67583f55.chunk.js.map": "/react-portfolio/static/js/2.67583f55.chunk.js.map",
-    "static/js/3.221943cf.chunk.js": "/react-portfolio/static/js/3.221943cf.chunk.js",
-    "static/js/3.221943cf.chunk.js.map": "/react-portfolio/static/js/3.221943cf.chunk.js.map",
+    "static/js/3.d0991611.chunk.js": "/react-portfolio/static/js/3.d0991611.chunk.js",
+    "static/js/3.d0991611.chunk.js.map": "/react-portfolio/static/js/3.d0991611.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.d6042e45.chunk.css.map": "/react-portfolio/static/css/main.d6042e45.chunk.css.map",
+    "static/css/main.a3b8ea77.chunk.css.map": "/react-portfolio/static/css/main.a3b8ea77.chunk.css.map",
     "static/js/2.67583f55.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.67583f55.chunk.js.LICENSE.txt",
+    "static/media/about.jpg": "/react-portfolio/static/media/about.49ee202d.jpg",
     "static/media/hero.7eb28e42.jpg": "/react-portfolio/static/media/hero.7eb28e42.jpg",
     "static/media/jesse-parent-resume.d8607cdb.pdf": "/react-portfolio/static/media/jesse-parent-resume.d8607cdb.pdf",
     "static/media/work-avengers.5865666a.jpg": "/react-portfolio/static/media/work-avengers.5865666a.jpg",
@@ -22,9 +23,9 @@
     "static/media/work-utahimprov.1ff7d845.jpg": "/react-portfolio/static/media/work-utahimprov.1ff7d845.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.af20d7ad.js",
+    "static/js/runtime-main.ae413aa4.js",
     "static/js/2.67583f55.chunk.js",
-    "static/css/main.d6042e45.chunk.css",
-    "static/js/main.e9d624f6.chunk.js"
+    "static/css/main.a3b8ea77.chunk.css",
+    "static/js/main.c3238acf.chunk.js"
   ]
 }

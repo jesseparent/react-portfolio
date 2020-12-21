@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project uses my newly acquired React skills to build a Single Page Application showcasing a portfolio of projects, information about me, my resume, a working contact form using native email, and links to my GitHub and social media.
+
+## Screenshot
+
+- The screenshot of the final work:
+  ![Image](./screenshot.gif)
 
 ## Available Scripts
 

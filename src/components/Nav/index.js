@@ -19,9 +19,11 @@ function Nav(props) {
       <nav>
         <ul>
           {categories.map((category) => (
-            <li key={category.id} onClick={() => {
-              setCurrentCategory(category);
-            }}>{category.name}</li>
+            <li
+              className={currentCategory.name === category.name && 'selectedCategory'}
+              key={category.id} onClick={() => {
+                setCurrentCategory(category);
+              }}>{category.name}</li>
           ))}
         </ul>
       </nav>

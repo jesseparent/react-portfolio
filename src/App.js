@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -32,12 +32,13 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header></Header>
+      <Navigation
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-      ></Nav>
-      <Header></Header>
+      ></Navigation>
+
       <main>
         {
           renderPage()

@@ -12,24 +12,21 @@ function Resume() {
           <p>
             Feel free to download my <a href={ResumeLink} download="jesse-parent-resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>.
           </p>
-          <p>
-            <h3>Front-End Skills</h3>
 
+          <h3>Front-End Skills</h3>
+          <p>
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
             <li>jQuery</li>
             <li>Bootstrap</li>
-
           </p>
+          <h3>Back-End Skills</h3>
           <p>
-            <h3>Back-End Skills</h3>
-
             <li>ASP.Net</li>
             <li>NodeJS</li>
             <li>PHP</li>
             <li>Python</li>
-
           </p>
         </div>
       </article>

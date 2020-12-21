@@ -1,4 +1,5 @@
 import React from 'react';
+import Project from '../Project';
 
 import bgWork1 from '../../assets/images/work-git-ticket.jpg';
 import bgWork2 from '../../assets/images/work-avengers.jpg';
@@ -7,31 +8,64 @@ import bgWork4 from '../../assets/images/work-jesseparent.jpg';
 import bgWork5 from '../../assets/images/work-jnj.jpg';
 import bgWork6 from '../../assets/images/work-utahimprov.jpg';
 
-const bgWork1Style = {
-  backgroundImage: "url( " + bgWork1 + ")"
-}
-
-const bgWork2Style = {
-  backgroundImage: "url( " + bgWork2 + ")"
-}
-
-const bgWork3Style = {
-  backgroundImage: "url( " + bgWork3 + ")"
-}
-
-const bgWork4Style = {
-  backgroundImage: "url( " + bgWork4 + ")"
-}
-
-const bgWork5Style = {
-  backgroundImage: "url( " + bgWork5 + ")"
-}
-
-const bgWork6Style = {
-  backgroundImage: "url( " + bgWork6 + ")"
-}
-
 function Portfolio() {
+
+  const projects = [
+    {
+      name: 'Git Ticketing System',
+      url: 'https://git-ticketing-system.herokuapp.com/',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork1 + ")"
+      },
+      technologies: 'NodeJS/mySQL/JavaScript',
+      id: 1
+    },
+    {
+      name: 'Avengers Assembled',
+      url: 'https://jesseparent.github.io/avengersassembled/',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork2 + ")"
+      },
+      technologies: 'JavaScript/APIs/CSS',
+      id: 2
+    },
+    {
+      name: 'Run Buddy',
+      url: 'https://jesseparent.github.io/run-buddy/',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork3 + ")"
+      },
+      technologies: 'HTML/CSS',
+      id: 3
+    },
+    {
+      name: 'JesseParent.com',
+      url: 'http://www.jesseparent.com',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork4 + ")"
+      },
+      technologies: 'HTML/CSS/JavaScript',
+      id: 4
+    },
+    {
+      name: 'JoKyR and Jesster',
+      url: 'http://www.jokyrandjesster.com',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork5 + ")"
+      },
+      technologies: 'HTML/CSS/JavaScript',
+      id: 5
+    },
+    {
+      name: 'Utah Improv',
+      url: 'https://web.archive.org/web/20060103065142/http://www.utahimprov.com/',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork6 + ")"
+      },
+      technologies: 'SSI/JavaScript/CGI',
+      id: 6
+    },
+  ];
 
   return (
     <section className="content">
@@ -40,66 +74,11 @@ function Portfolio() {
           <h2>Portfolio</h2>
         </div>
         <div className="content-body work">
-          <a href="https://git-ticketing-system.herokuapp.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work1" style={bgWork1Style}>
-            <div className="work-label">
-              <h3>
-                Git Ticketing System
-            </h3>
-              <h4>
-                NodeJS/mySQL/JavaScript
-            </h4>
-            </div>
-          </div></a>
-          <a href="https://jesseparent.github.io/avengersassembled/" target="_blank" rel="noopener noreferrer"><div className="work-item work2" style={bgWork2Style}>
-            <div className="work-label">
-              <h3>
-                Avengers Assembled
-            </h3>
-              <h4>
-                JavaScript/APIs/CSS
-            </h4>
-            </div>
-          </div></a>
-          <a href="https://jesseparent.github.io/run-buddy/" target="_blank" rel="noopener noreferrer"><div className="work-item work3" style={bgWork3Style}>
-            <div className="work-label">
-              <h3>
-                Run Buddy
-            </h3>
-              <h4>
-                HTML/CSS
-            </h4>
-            </div>
-          </div></a>
-          <a href="http://www.jesseparent.com" target="_blank" rel="noopener noreferrer"><div className="work-item work4" style={bgWork4Style}>
-            <div className="work-label">
-              <h3>
-                JesseParent.com
-            </h3>
-              <h4>
-                HTML/CSS/JavaScript
-            </h4>
-            </div>
-          </div></a>
-          <a href="http://www.jokyrandjesster.com" target="_blank" rel="noopener noreferrer"><div className="work-item work5" style={bgWork5Style}>
-            <div className="work-label">
-              <h3>
-                JoKyR and Jesster
-            </h3>
-              <h4>
-                HTML/CSS/JavaScript
-            </h4>
-            </div>
-          </div></a>
-          <a href="https://web.archive.org/web/20060103065142/http://www.utahimprov.com/" target="_blank" rel="noopener noreferrer"><div className="work-item work6" style={bgWork6Style}>
-            <div className="work-label">
-              <h3>
-                Utah Improv
-            </h3>
-              <h4>
-                SSI/JavaScript/CGI
-            </h4>
-            </div>
-          </div></a>
+          {projects.map(project => (
+            <Project {...project}
+              key={project.id}
+            />
+          ))}
         </div>
       </article>
     </section>

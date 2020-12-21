@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function Nav(props) {
+function Navigation(props) {
   const {
     categories = [],
     setCurrentCategory,
@@ -10,7 +10,6 @@ function Nav(props) {
   useEffect(() => {
     document.title = currentCategory.name;
   }, [currentCategory]);
-
   return (
     <header>
       <div className="header-name">
@@ -20,7 +19,7 @@ function Nav(props) {
         <ul>
           {categories.map((category) => (
             <li
-              className={currentCategory.name === category.name && 'selectedCategory'}
+              className={` ${currentCategory.name === category.name && 'selectedCategory'}`}
               key={category.id} onClick={() => {
                 setCurrentCategory(category);
               }}>{category.name}</li>
@@ -31,4 +30,4 @@ function Nav(props) {
   );
 }
 
-export default Nav;
+export default Navigation;

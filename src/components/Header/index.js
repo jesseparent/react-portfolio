@@ -5,7 +5,7 @@ const heroStyle = {
   backgroundImage: "url( " + HeroBackground + ")"
 }
 
-function Hero() {
+function Header() {
   return (
     <section className="hero" style={heroStyle}>
       <div className="subtitle">
@@ -15,4 +15,4 @@ function Hero() {
   )
 }
 
-export default Hero;
+export default Header;

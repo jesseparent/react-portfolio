@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
+import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer'
 
 function App() {
   const [categories] = useState([
@@ -36,12 +37,13 @@ function App() {
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
       ></Nav>
-      <Hero></Hero>
+      <Header></Header>
       <main>
         {
           renderPage()
         }
       </main>
+      <Footer></Footer>
     </div>
   );
 }

@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Nav from './components/Nav';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
+  const [categories] = useState([
+    { name: 'About Me', id: 'aboutme' },
+    { name: 'Portfolio', id: 'portfolio' },
+    { name: 'Contact', id: 'contact' },
+    { name: 'Resume', id: 'resume' }
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const renderPage = () => {
+    switch (currentCategory.name) {
+      case 'Portfolio':
+        return (<Portfolio></Portfolio>);
+      case 'Contact':
+        return (<ContactForm />);
+      case 'Resume':
+        return (<Resume />);
+      default:
+        return (<AboutMe></AboutMe>);
+    }
+  };
+
   return (
-    < div >
-      <header>
-        <div className="header-name">
-          <h1>Jesse Parent</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a
-              href="mailto:me@jesseparent.com?subject=Resume%20Request&body=We%20would%20love%20a%20copy%20of%20your%20most%20recent%20resume">Resume</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <div>
+      <Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      ></Nav>
+      <main>
+        {
+          renderPage()
+        }
+      </main>
     </div>
   );
 }

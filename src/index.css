@@ -174,7 +174,7 @@ footer ul li a {
   display: flex;
 }
 
-/* Need to refer to work-label in this path or the block layout for teh headers reverts to flex/inline */
+/* Need to refer to work-label in this path or the block layout for the headers reverts to flex/inline */
 .work div .work-label {
   background-color: var(--secondary-color);
   margin: 0 0 15px 0;
@@ -184,6 +184,11 @@ footer ul li a {
 
 .work div .work-label h3 {
   font-size: 1.5vw;
+}
+
+.work a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .work div .work-label h4 {

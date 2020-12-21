@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.980a2f71.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.f9092b8b.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.f9092b8b.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.ce0de9ea.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.50f8a997.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.50f8a997.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.af20d7ad.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.af20d7ad.js.map",
     "static/js/2.f4218ab9.chunk.js": "/react-portfolio/static/js/2.f4218ab9.chunk.js",
@@ -10,14 +10,20 @@
     "static/js/3.221943cf.chunk.js": "/react-portfolio/static/js/3.221943cf.chunk.js",
     "static/js/3.221943cf.chunk.js.map": "/react-portfolio/static/js/3.221943cf.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/main.980a2f71.chunk.css.map": "/react-portfolio/static/css/main.980a2f71.chunk.css.map",
+    "static/css/main.ce0de9ea.chunk.css.map": "/react-portfolio/static/css/main.ce0de9ea.chunk.css.map",
     "static/js/2.f4218ab9.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.f4218ab9.chunk.js.LICENSE.txt",
-    "static/media/hero.7eb28e42.jpg": "/react-portfolio/static/media/hero.7eb28e42.jpg"
+    "static/media/hero.7eb28e42.jpg": "/react-portfolio/static/media/hero.7eb28e42.jpg",
+    "static/media/work-avengers.5865666a.jpg": "/react-portfolio/static/media/work-avengers.5865666a.jpg",
+    "static/media/work-git-ticket.513da949.jpg": "/react-portfolio/static/media/work-git-ticket.513da949.jpg",
+    "static/media/work-jesseparent.0e79ccf2.jpg": "/react-portfolio/static/media/work-jesseparent.0e79ccf2.jpg",
+    "static/media/work-jnj.fd8fb580.jpg": "/react-portfolio/static/media/work-jnj.fd8fb580.jpg",
+    "static/media/work-runbuddy.d26776ec.jpg": "/react-portfolio/static/media/work-runbuddy.d26776ec.jpg",
+    "static/media/work-utahimprov.1ff7d845.jpg": "/react-portfolio/static/media/work-utahimprov.1ff7d845.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.af20d7ad.js",
     "static/js/2.f4218ab9.chunk.js",
-    "static/css/main.980a2f71.chunk.css",
-    "static/js/main.f9092b8b.chunk.js"
+    "static/css/main.ce0de9ea.chunk.css",
+    "static/js/main.50f8a997.chunk.js"
   ]
 }

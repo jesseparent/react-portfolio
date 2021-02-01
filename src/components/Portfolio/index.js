@@ -1,55 +1,55 @@
 import React from 'react';
 import Project from '../Project';
 
-import bgWork1 from '../../assets/images/work-git-ticket.jpg';
-import bgWork2 from '../../assets/images/work-avengers.jpg';
-import bgWork3 from '../../assets/images/work-runbuddy.jpg';
-import bgWork4 from '../../assets/images/work-jesseparent.jpg';
-import bgWork5 from '../../assets/images/work-jnj.jpg';
-import bgWork6 from '../../assets/images/work-utahimprov.jpg';
+import bgWork1 from '../../assets/images/work-garage-sale.jpg';
+import bgWork2 from '../../assets/images/work-git-ticket.jpg';
+import bgWork3 from '../../assets/images/work-avengers.jpg';
+import bgWork4 from '../../assets/images/work-runbuddy.jpg';
+import bgWork5 from '../../assets/images/work-jesseparent.jpg';
+import bgWork6 from '../../assets/images/work-jnj.jpg';
 
 function Portfolio() {
 
   const projects = [
     {
-      name: 'Git Ticketing System',
-      url: 'https://git-ticketing-system.herokuapp.com/',
+      name: 'Garage Sale',
+      url: 'https://garage-sale-project.herokuapp.com/',
       bgStyle: {
         backgroundImage: "url( " + bgWork1 + ")"
       },
-      technologies: 'NodeJS/mySQL/JavaScript',
+      technologies: 'NodeJS/Mongoose/GraphQL',
       id: 1
+    },
+    {
+      name: 'Git Ticketing System',
+      url: 'https://git-ticketing-system.herokuapp.com/',
+      bgStyle: {
+        backgroundImage: "url( " + bgWork2 + ")"
+      },
+      technologies: 'NodeJS/mySQL/JavaScript',
+      id: 2
     },
     {
       name: 'Avengers Assembled',
       url: 'https://jesseparent.github.io/avengersassembled/',
       bgStyle: {
-        backgroundImage: "url( " + bgWork2 + ")"
+        backgroundImage: "url( " + bgWork3 + ")"
       },
       technologies: 'JavaScript/APIs/CSS',
-      id: 2
+      id: 3
     },
     {
       name: 'Run Buddy',
       url: 'https://jesseparent.github.io/run-buddy/',
       bgStyle: {
-        backgroundImage: "url( " + bgWork3 + ")"
+        backgroundImage: "url( " + bgWork4 + ")"
       },
       technologies: 'HTML/CSS',
-      id: 3
+      id: 4
     },
     {
       name: 'JesseParent.com',
       url: 'http://www.jesseparent.com',
-      bgStyle: {
-        backgroundImage: "url( " + bgWork4 + ")"
-      },
-      technologies: 'HTML/CSS/JavaScript',
-      id: 4
-    },
-    {
-      name: 'JoKyR and Jesster',
-      url: 'http://www.jokyrandjesster.com',
       bgStyle: {
         backgroundImage: "url( " + bgWork5 + ")"
       },
@@ -57,14 +57,14 @@ function Portfolio() {
       id: 5
     },
     {
-      name: 'Utah Improv',
-      url: 'https://web.archive.org/web/20060103065142/http://www.utahimprov.com/',
+      name: 'JoKyR and Jesster',
+      url: 'http://www.jokyrandjesster.com',
       bgStyle: {
         backgroundImage: "url( " + bgWork6 + ")"
       },
-      technologies: 'SSI/JavaScript/CGI',
+      technologies: 'HTML/CSS/JavaScript',
       id: 6
-    },
+    }
   ];
 
   return (

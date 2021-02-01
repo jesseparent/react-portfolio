@@ -1,6 +1,6 @@
 # React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project uses my newly acquired React skills to build a Single Page Application showcasing a portfolio of projects, information about me, my resume, a working contact form using native email, and links to my GitHub and social media.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project uses my newly acquired React skills to build a Single Page Application showcasing a portfolio of projects, information about me, my resume, a working contact form using native email, and links to my GitHub and social media. Its is deployed at https://jesseparent.github.io/react-portfolio/
 
 ## Screenshot
 
